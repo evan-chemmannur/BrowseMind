@@ -1,0 +1,67 @@
+.predict-chart-card {
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.predict-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.rec-card {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.rec-buy { border-color: rgba(16,185,129,0.3); }
+.rec-wait { border-color: rgba(245,158,11,0.3); }
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 18px;
+  z-index: 1;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 7px;
+  top: 32px;
+  bottom: -8px;
+  width: 1px;
+  z-index: 0;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .rec-card { padding: var(--space-lg); }
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}

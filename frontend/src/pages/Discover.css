@@ -1,0 +1,78 @@
+.discover-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.discover-hero-card {
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+}
+
+.discover-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: transform 0.4s ease;
+}
+
+.discover-hero-card:hover .discover-hero-img {
+  transform: scale(1.04);
+}
+
+.discover-hero-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: var(--space-xl);
+  background: linear-gradient(to top, rgba(2,0,16,0.95), transparent);
+}
+
+.discover-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.discover-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.discover-card:hover .discover-card-img {
+  transform: scale(1.03);
+}
+
+.discover-card-body {
+  padding: var(--space-md);
+}
+
+/* Top Rated */
+.top-rated-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.top-rated-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.rank-badge {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .discover-hero-grid { grid-template-columns: 1fr; }
+  .discover-hero-card { height: 240px; }
+}

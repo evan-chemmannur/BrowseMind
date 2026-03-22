@@ -47,6 +47,11 @@ BrowseMind/
 ├── vercel.json         # Deployment configuration
 └── package.json        # Root scripts and dependencies
 
+⚡ Deployment (Vercel)
+
+BrowseMind is deployed using Vercel for fast, scalable, and production-ready hosting.
+Deployment link : browsemind1-lhojorz1l-evan-chemmannurs-projects.vercel.app
+
 ⚠️ Disclaimer
 
 This project is intended for educational and research purposes only.

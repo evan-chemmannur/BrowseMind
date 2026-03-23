@@ -50,8 +50,7 @@ BrowseMind/
 ⚡ Deployment (Vercel)
 
 BrowseMind is deployed using Vercel for fast, scalable, and production-ready hosting.
-Deployment link : browsemind1-lhojorz1l-evan-chemmannurs-projects.vercel.app
-
+Deployment link : browsemind1.vercel.app
 ⚠️ Disclaimer
 
 This project is intended for educational and research purposes only.
